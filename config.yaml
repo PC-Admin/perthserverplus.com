@@ -1,0 +1,83 @@
+baseURL: "https://perthserverplus.com/"
+theme: "up-business-theme"
+languageCode: "en-au"
+
+title: "Perth Server Plus+"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "Perth Server Plus+"
+  description: "We specialize in providing services to desing websites, applications, build and maintain business for customers."
+  images: 
+    - "images/hero-image.png"
+
+  logo: "arrow-up.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    dribbble: "#"
+    instagram: "#"
+    facebook: "#"
+    twitter: "#"
+
+  location:
+    - "Perth, Western Australia"
+    - "4517 Washington Ave. Manchester, Kentucky 39495"
+
+  contact:
+    - "michael@perthserverplus.com"
+    - "+ 61 490 435 377"
+
+  copyright: "© 2023 Perth Server Plus+ - All Rights Reserved"
+
+menus:
+  main:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "Services"
+      url: "/#"
+      weight: 2
+
+    - name: "Pricing"
+      url: "/#"
+      weight: 3
+
+    - name: "Blog"
+      url: "/blog"
+      weight: 4
+
+  buttons:
+    - name: "Book a call"
+      url: "/#"
+      weight: 4
+      pre: "btn btn-primary text-light"
+
+  footer:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "Services"
+      url: "/#"
+      weight: 2
+
+    - name: "Pricing"
+      url: "/#"
+      weight: 3
+
+    - name: "Blog"
+      url: "/blog"
+      weight: 4
+
+taxonomies:
+  series: "series"
+  tags: "tags"
