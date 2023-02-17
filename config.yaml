@@ -3,15 +3,15 @@ baseURL: "https://PC-Admin.gitlab.io/perthserverplus.com/"
 theme: "up-business-theme"
 languageCode: "en-au"
 
-title: "Perth Server Plus+"
+title: "PerthServerPlus+"
 
 # googleAnalytics: ""
 
 summaryLength: 20
 
 params:
-  title: "Perth Server Plus+"
-  description: "We specialize in providing services to desing websites, applications, build and maintain business for customers."
+  title: "PerthServerPlus+"
+  description: "We specialize in providing services to designing websites, applications, build and maintain business for customers."
   images: 
     - "images/hero-image.png"
 
@@ -30,13 +30,12 @@ params:
 
   location:
     - "Perth, Western Australia"
-    - "4517 Washington Ave. Manchester, Kentucky 39495"
 
   contact:
     - "michael@perthserverplus.com"
     - "+ 61 490 435 377"
 
-  copyright: "© 2023 Perth Server Plus+ - All Rights Reserved"
+  copyright: "© 2023 PerthServerPlus+ All Rights Reserved"
 
 menus:
   main:

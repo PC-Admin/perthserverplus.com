@@ -2,11 +2,11 @@ enabled: true
 id: "hero"
 
 content:
-  title: "How to **level up** your business"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est faucibus tellus leo non pellentesque lorem vel. Arcu magna eros, potenti duis."
+  title: "Your **local** web specialists"
+  text: "Get premium on-site support for your server, service, network or application. We specialise in creating custom solutions for businesses."
 
   buttonPrimary:
-    label: "How we work"
+    label: "How it works"
     url: "#"
 
   buttonSecondary:

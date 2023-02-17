@@ -14,21 +14,9 @@ content:
       - label: "Read more"
         url: "#"
 
-  - image: "images/portfolio-ecommerce.png"
+  - image: "images/testimonials-awards.png"
     pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
-
-    buttons: 
-      - label: "See live"
-        url: "#"
-
-      - label: "Read more"
-        url: "#"
-
-  - image: "images/portfolio-ecommerce.png"
-    pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
+    title: "Custom developed software solutions for your business."
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
 
     buttons: 

@@ -2,26 +2,47 @@ enabled: true
 id: "services"
 
 content:
-  title: "Our main services"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  title: "Our Services"
+  text: "We offer a variety of services to suite your needs."
   cards:
-    - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    - image: "images/servers.png"
+      title: "Server Setup & Maintenance"
+      text: "Get on-call and on-site support for your server, service or application. Got an out of date server that's overdue for an upgrade? Call me for a free on-site analysis."
       button:
         label: "Learn more"
         url: "#"
 
-    - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    - image: "images/hero-image-2.png"
+      title: "Automation Solutions"
+      text: "I specialise in Ansible, Python and Bash and can automate processes for your workplace. Skip the repetitive tasks in your work flow and win back your time."
       button:
         label: "Learn more"
         url: "#"
 
-    - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    - image: "images/moosefs-3.png"
+      title: "Distributed Storage"
+      text: "RAID puts your data at risk, get an adaptive multi-host filesystem with fantastic uptime and security, that can grow and shrink as your business changes."
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/backup-2.png"
+      title: "Backup and Monitoring Solutions"
+      text: "We can automate and monitor your services backups, providing custom backup solutions tailored to your unique situation and budget."
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/linux.png"
+      title: "Linux Server Support"
+      text: "We can automate and monitor your services backups, providing custom backup solutions tailored to your unique situation and budget."
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/database.png"
+      title: "Database Management"
+      text: "We can automate and monitor your services backups, providing custom backup solutions tailored to your unique situation and budget."
       button:
         label: "Learn more"
         url: "#"
