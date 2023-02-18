@@ -19,9 +19,9 @@ content:
         label: "Learn more"
         url: "#"
 
-    - image: "images/moosefs-3.png"
+    - image: "images/storage-array.png"
       title: "Distributed Storage"
-      text: "RAID puts your data at risk, get an adaptive multi-host filesystem with fantastic uptime and security, that can grow and shrink as your business changes."
+      text: "RAID puts your data at risk, multiple disk failure or host failure could leave your business \"up the creek\". Get an adaptive multi-host filesystem that will provides you better uptime and security, that can grow and scale (to petabytes) or shrink as your business needs change."
       button:
         label: "Learn more"
         url: "#"
@@ -33,16 +33,16 @@ content:
         label: "Learn more"
         url: "#"
 
-    - image: "images/linux.png"
-      title: "Linux Server Support"
-      text: "We can automate and monitor your services backups, providing custom backup solutions tailored to your unique situation and budget."
+    - image: "images/network-engineering.png"
+      title: "Network Engineering"
+      text: "Whether you need assistance with network architecture design, network optimization, or network security, we have the resources and expertise to provide effective solutions that meet your businesses unique requirements."
       button:
         label: "Learn more"
         url: "#"
 
-    - image: "images/database.png"
+    - image: "images/databases.png"
       title: "Database Management"
-      text: "We can automate and monitor your services backups, providing custom backup solutions tailored to your unique situation and budget."
+      text: "We offer a range of services to help our clients manage their databases effectively, including designing, implementing, and maintaining databases, ensuring data accuracy and consistency, monitoring database performance, and implementing backup and recovery strategies."
       button:
         label: "Learn more"
         url: "#"

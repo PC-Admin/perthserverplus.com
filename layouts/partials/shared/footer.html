@@ -37,7 +37,13 @@
       <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
         <h5 class="fs-6 fw-semibold text-primary">Contact us</h5>
         {{ range .Site.Params.contact }}
-          <p class="small text-black-61 mb-1">{{ . }}</p>
+          {{ if (strings.HasPrefix . "michael@") }}
+            <p class="small text-black-61 mb-1"><a href="mailto:{{ . }}">{{ . }}</a></p>
+          {{ else if (strings.HasPrefix . "+61") }}
+            <p class="small text-black-61 mb-1"><a href="tel:{{ . }}">{{ . }}</a></p>
+          {{ else }}
+            <p class="small text-black-61 mb-1">{{ . }}</p>
+          {{ end }}
         {{ end }}
       </div>
     </div>

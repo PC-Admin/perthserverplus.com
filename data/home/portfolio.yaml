@@ -16,8 +16,8 @@ content:
 
   - image: "images/testimonials-awards.png"
     pretitle: "Portfolio Service"
-    title: "Custom developed software solutions for your business."
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    title: "Custom developed software solutions for your business"
+    text: "Our software solutions are custom tailored to your business needs, ."
 
     buttons: 
       - label: "See live"
