@@ -23,10 +23,10 @@ params:
     faviconColor: "#000000"
 
   social:
-    dribbble: "#"
-    instagram: "#"
-    facebook: "#"
-    twitter: "#"
+    linkedin: "https://www.linkedin.com/company/perthserverplus/"
+    facebook: "https://www.facebook.com/perthserverplus/"
+    github: "https://github.com/PC-Admin/"
+    gitlab: "https://gitlab.com/PC-Admin/"
 
   location:
     - "Perth, Western Australia"

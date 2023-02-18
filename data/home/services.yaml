@@ -7,42 +7,42 @@ content:
   cards:
     - image: "images/servers.png"
       title: "Server Setup & Maintenance"
-      text: "Get on-call and on-site support for your server, service or application. Got an out of date server that's overdue for an upgrade? Call me for a free on-site analysis."
+      text: "You can rely on our on-call and on-site support for all your server, service, and application needs. Whether you need regular maintenance and updates to keep your systems running smoothly, or urgent support to fix critical issues, our team is available 24/7 to provide the expert assistance you need. If you have an outdated server that's causing problems or overdue for an upgrade, call us for a free on-site analysis. We'll work with you to develop a customized solution that meets your specific needs and budget. Call me for a free on-site analysis."
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/hero-image-2.png"
       title: "Automation Solutions"
-      text: "I specialise in Ansible, Python and Bash and can automate processes for your workplace. Skip the repetitive tasks in your work flow and win back your time."
+      text: "With expertise in Ansible, Python, and Bash, I have the skills to automate processes and streamline workflows for your workplace. Whether it's repetitive tasks that eat up valuable time or complex processes that require precision, I can design custom automation solutions that meet your specific needs. By automating your processes, you can boost efficiency and productivity, freeing up time and resources for more important tasks. Let me help you take your business to the next level with effective process automation solutions."
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/storage-array.png"
       title: "Distributed Storage"
-      text: "RAID puts your data at risk, multiple disk failure or host failure could leave your business \"up the creek\". Get an adaptive multi-host filesystem that will provides you better uptime and security, that can grow and scale (to petabytes) or shrink as your business needs change."
+      text: "Don't let RAID put your business-critical data at risk. An adaptive multi-host filesystem is a more secure and reliable solution, offering better uptime and scalability to accommodate your changing business needs. This advanced filesystem is designed to provide maximum protection for your data, while also ensuring easy adjustments to your storage capacity as needed. Trust us to help you take your business to the next level with our advanced filesystem solution."
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/backup-2.png"
       title: "Backup and Monitoring Solutions"
-      text: "We can automate and monitor your services backups, providing custom backup solutions tailored to your unique situation and budget."
+      text: "With my automated and monitored backup solutions, I can provide you with a customized backup service that fits your unique needs and budget. Backing up your data is crucial to protect against unexpected failures, data loss, or cyberattacks. Get in touch with me today to learn more about how my backup services can help safeguard your data and ensure business continuity."
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/network-engineering.png"
       title: "Network Engineering"
-      text: "Whether you need assistance with network architecture design, network optimization, or network security, we have the resources and expertise to provide effective solutions that meet your businesses unique requirements."
+      text: "Our team of skilled network engineers is equipped to provide a full range of network services, including architecture design, optimization, and security, tailored to meet your business's specific needs and requirements. We leverage our expertise and advanced technologies to deliver effective and practical solutions that help your business operate more efficiently and securely."
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/databases.png"
       title: "Database Management"
-      text: "We offer a range of services to help our clients manage their databases effectively, including designing, implementing, and maintaining databases, ensuring data accuracy and consistency, monitoring database performance, and implementing backup and recovery strategies."
+      text: "At our company, we understand the importance of effective database management and offer a comprehensive suite of services to meet the diverse needs of our clients, including database design, implementation, and maintenance, data accuracy and consistency, performance monitoring, and backup and recovery strategies, all delivered by our experienced team of experts to help optimize your database performance and ensure business continuity."
       button:
         label: "Learn more"
         url: "#"
