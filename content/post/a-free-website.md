@@ -26,9 +26,12 @@ Disclaimer: before we start, it's important to note that creating a website is n
 
 Now that we have our domain name, we need a way to build our website. For this, we will use Hugo, a static website development framework that is easy to use and allows us to create beautiful websites quickly. Hugo is open-source, which means that it is free to use and has a large community of developers who contribute to its development.
 
+![Hugo Themes](https://perthserverplus.com/images/hugo-themes.png)
+
 https://themes.gohugo.io/
 
-To start, we need to select a Hugo theme that fits our needs. Hugo has a wide variety of free and premium themes available, so we can choose one that fits our brand or services. Once we have selected our theme, we can start editing our website to our liking. Hugo uses Markdown, a simple markup language, to create content, which makes it easy for anyone, even those with no coding experience, to create beautiful websites.
+
+To start, we need to select a Hugo themes that fits our needs. Hugo has a wide variety of free and premium themes available, so we can choose one that fits our brand or services. Once we have selected our theme, we can start editing our website to our liking. Hugo uses Markdown, a simple markup language, to create content, which makes it easy for anyone, even those with no coding experience, to create beautiful websites.
 
 # github static pages link/pic
 

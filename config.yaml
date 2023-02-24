@@ -14,6 +14,7 @@ params:
   description: "Get premium on-site support for your server, service, network or application. We specialise in creating custom solutions for businesses."
   images: 
     - "images/hero-image.png"
+    - "images/hugo-themes.png"
 
   logo: "arrow-up.png"
 
