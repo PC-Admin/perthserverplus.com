@@ -21,6 +21,8 @@ params:
     - "images/namesilo.png"
     - "images/portfolio-ecommerce.png"
     - "images/hosted-on-gitlab.png"
+    - "images/moosefs.png"
+    - "images/moosefs-pro-architecture.png"
 
   logo: "arrow-up.png"
 
