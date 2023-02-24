@@ -17,6 +17,7 @@ params:
     - "images/hugo-themes.png"
     - "images/gitlab-pages.png"
     - "images/calendy.png"
+    - "images/cloudflare.png"
 
   logo: "arrow-up.png"
 
@@ -39,7 +40,7 @@ params:
     - "+61 490 435 377"
     - "or"
 
-  copyright: "© 2023 PerthServerPlus+ All Rights Reserved"
+  copyright: "©2023 PerthServerPlus+ All Rights Reserved"
 
 menus:
   main:

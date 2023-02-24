@@ -10,13 +10,13 @@ tags = [
 ]
 +++
 
-In today's digital age, having a website is essential for any business or individual who wants to promote their brand or services online. However, creating a website can be a costly and time-consuming process. Luckily, with the right tools and a bit of creativity, it is possible to build a website for free, or at a very low cost.
+This is how I created this very website for FREE using Hugo and other technologies to host a "static website". A lot of websites today have server-side scripting, databases or other complex systems (like WordPress) powering their websites. But web hosting can be simpler and more affordable by opting out of these heavyweight features and creating a website that's just simple static content. Since hosting a static website is so affordable, many large tech companies (GitHub, GitLab, Amazon, CloudFlare) will offer to host your static website for free to encourage you to use their platform.
 
 ### It All Starts With a Domain Name
 
 ---
 
-Disclaimer: before we start, it's important to note that creating a website is not entirely free. In this post, we will assume that you have already rented a domain name, which can cost anywhere from a few dollars to hundreds of dollars per year. In our case, we rented the perthserverplus.com domain from namesilo.com for a yearly fee of $15.95 AUD.
+Disclaimer: before we start, it's important to note that creating a static website is not entirely free. In this post, we will assume that you have already rented a domain name, which can cost anywhere from a few dollars to hundreds of dollars per year. In our case, we rented the perthserverplus.com domain from [www.namesilo.com](https://www.namesilo.com/) for a yearly fee of ~$16 AUD.
 
 ![NameSilo Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/NameSilo_Logo.svg/798px-NameSilo_Logo.svg.png)
 
@@ -39,11 +39,13 @@ To start, we need to select a Hugo themes that fits our needs. Hugo has a wide v
 
 ![GitLab Pages](https://perthserverplus.com/images/gitlab-pages.png)
 
-https://docs.gitlab.com/ee/user/project/pages/
+https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_new_project_template.html
+
+https://docs.gitlab.com/ee/user/project/pages/custom_domains_ssl_tls_certification/
 
 Once we have created our website, we need to host it somewhere. For this, we will use GitLab Static Pages, a free hosting service that is perfect for static websites. GitLab Static Pages offers free hosting, unlimited bandwidth, and allows us to use custom domains, which means that we can use our perthserverplus.com domain name. To deploy our website to GitLab Static Pages, we can use a CI/CD pipeline that compiles our Hugo website automatically. 
 
-The following YAML code can be used to create the pipeline:
+The following YAML code can be used in your GitLab repository to create the pipeline:
 ```
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
@@ -60,13 +62,15 @@ pages:
   - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 ```
 
-### CloudFlare Email and CDN
+### CloudFlare Email Forwarding and CDN
 
 ---
 
-With our website hosted, we need to make sure that it is fast and secure. For this, we will use Cloudflare, a free Content Delivery Network (CDN) that accelerates and protects our website. Cloudflare offers free SSL certificates, which means that our website will be encrypted and secure. Cloudflare also caches our website's content, which makes it faster to load for visitors from different parts of the world.
+With our website hosted, we need to make sure that it is fast and secure. For this, we will use Cloudflare, a free Content Delivery Network (CDN) that accelerates and protects our website. Cloudflare caches our website's content, which makes it faster to load for visitors from different parts of the world.
 
-![CloudFlare Pic](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cloudflare_Logo.svg/640px-Cloudflare_Logo.svg.png)
+I'll also be using CloudFlare to setup free email forwarding from [michael@perthserverplus.com](mailto:michael@perthserverplus.com) to my email account.
+
+![GitLab Pages](https://perthserverplus.com/images/cloudflare.png)
 
 ### Calendy Scheduler
 
@@ -76,4 +80,6 @@ With our website hosted, we need to make sure that it is fast and secure. For th
 
 Finally, we need a way for our clients to book appointments with us. For this, we will use Calendly, a free scheduling system that integrates with our website. Calendly allows us to set up our availability and create custom booking links that we can share with our clients. With Calendly, our clients can easily book appointments with us without having to call or email us.
 
-In conclusion, building a website for free, or at a very low cost, is possible with the right tools and a bit of creativity. With Hugo, GitLab Static Pages, Cloudflare, and Calendly, we can create a beautiful and functional website that promotes our brand or services online. Remember, the monthly ongoing costs, besides the domain name, is $0, which makes it an excellent option for anyone who wants to create a website on a budget.
+---
+
+In conclusion, building a website for free, or at a very low cost, is possible with the right tools and a bit of creativity. With Hugo, GitLab Static Pages, Cloudflare, and Calendly, we can create a beautiful and functional website that promotes our brand or services online. Remember, the monthly ongoing costs, besides the domain name, **is $0**, which makes it an excellent option for anyone who wants to create a website on a budget.
