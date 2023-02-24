@@ -15,6 +15,8 @@ params:
   images: 
     - "images/hero-image.png"
     - "images/hugo-themes.png"
+    - "images/gitlab-pages.png"
+    - "images/calendy.png"
 
   logo: "arrow-up.png"
 
