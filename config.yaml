@@ -45,11 +45,11 @@ params:
 menus:
   main:
     - name: "Home"
-      url: "/#hero"
+      url: "#"
       weight: 1
 
     - name: "Blog"
-      url: "/blog"
+      url: "https://perthserverplus.com/post/"
       weight: 2
 
   buttons:
@@ -60,11 +60,11 @@ menus:
 
   footer:
     - name: "Home"
-      url: "/#hero"
+      url: "#"
       weight: 1
 
     - name: "Blog"
-      url: "/blog"
+      url: "https://perthserverplus.com/post/"
       weight: 2
 
 taxonomies:
