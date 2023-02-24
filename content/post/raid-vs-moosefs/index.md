@@ -47,6 +47,9 @@ Data integrity is also a critical issue in data storage. RAID provides some leve
 
 MooseFS offers efficient atomic snapshotting, ensuring that data integrity is maintained at all times. With atomic snapshotting, MooseFS takes a snapshot of the data at a specific point in time, ensuring that any changes made to the data are not reflected until the snapshot is complete. This approach ensures that even if there is data corruption, the snapshot can be used to restore the data to a known good state.
 
+
+![MooseFS](https://perthserverplus.com/images/moosefs-master.png)
+
 ### Performance
 
 ---
