@@ -1,4 +1,4 @@
-<footer class="shared footer bg-blue-light py-5">
+<footer class="shared footer bg-blue-light py-5" id="footer">
   <div class="container">
     <div class="row pb-5">
       <div class="col-12 col-xl-4 text-center text-xl-start pb-4">
@@ -45,6 +45,7 @@
             <p class="medium text-black-61 mb-1">{{ . }}</p>
           {{ end }}
         {{ end }}
+        <br>
         <ul class="navbar-nav ms-xl-3 mb-2 mb-xl-0">
           {{ range .Site.Menus.buttons }}
             <li class="nav-item">

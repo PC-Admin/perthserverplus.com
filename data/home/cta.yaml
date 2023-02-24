@@ -4,6 +4,6 @@ id: "cta"
 content:
   title: "Contact us today!"
   image: "images/services-web-development.png"
-  button:
-    label: "Let's talk"
-    url: "#"
+  #button:
+  #  label: "Let's talk"
+  #  url: "#"

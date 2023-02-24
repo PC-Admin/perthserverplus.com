@@ -2,7 +2,7 @@ enabled: true
 id: "brands"
 
 content:
-  title: "We work the following brands and technologies"
+  title: "Development with the following brands and technologies"
   items:
     - "images/brands-ubuntu.png"
     - "images/brands-google-2.png"

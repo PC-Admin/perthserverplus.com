@@ -6,10 +6,10 @@ content:
   text: "Get premium on-site support for your server, service, network or application. We specialise in creating custom solutions for businesses."
 
   buttonPrimary:
-    label: "How it works"
+    label: "Book a meeting"
     url: "#"
 
   buttonSecondary:
-    label: "Let's talk"
+    label: "Contact Us"
     url: ""
 
