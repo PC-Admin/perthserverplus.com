@@ -1,6 +1,4 @@
 
-![Article Image](https://perthserverplus.com/images/portfolio-ecommerce.png)
-
 +++
 author = "Michael Collins"
 title = "A Free Website!"
@@ -12,6 +10,9 @@ tags = [
     "meta"
 ]
 +++
+
+
+![Article Image](https://perthserverplus.com/images/portfolio-ecommerce.png)
 
 This is how I created this very website for FREE using Hugo and other technologies to host a "static website". A lot of websites today have server-side scripting, databases or other complex systems (like WordPress) powering their websites. But web hosting can be simpler and more affordable by opting out of these heavyweight features and creating a website that's just simple static content. Since hosting a static website is so affordable, many large tech companies (GitHub, GitLab, Amazon, CloudFlare) will offer to host your static website for free to encourage you to use their platform.
 
