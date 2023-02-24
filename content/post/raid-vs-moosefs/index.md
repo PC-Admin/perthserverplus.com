@@ -21,8 +21,6 @@ tags = [
 When it comes to data storage, many organizations turn to RAID as a popular option. RAID technology allows multiple physical hard drives to be combined into a single logical unit, providing improved performance and data redundancy. However, despite its popularity, RAID has its drawbacks and can be dangerous, leading to more downtime when compared to distributed storage systems like [MooseFS](https://moosefs.com/).
 
 
-![MooseFS](https://perthserverplus.com/images/moosefs-pro-architecture.png)
-
 ### Points of Failure
 
 ---
@@ -31,13 +29,15 @@ One of the primary issues with RAID is the risk of a single point of failure. In
 
 MooseFS, on the other hand, offers multiple host redundancy. This feature ensures that there is no single point of failure, meaning that even if one or more of the physical drives fails, the data will still be accessible from another node. This redundancy prevents downtime and data loss, providing peace of mind for organizations storing important data.
 
+![MooseFS](https://perthserverplus.com/images/moosefs-pro-architecture.png)
+
 ### Scalability
 
 ---
 
 Another issue with RAID is scalability. While RAID can provide improved performance and redundancy for small to medium-sized data sets, it can become less effective as data sets grow in size. As the number of drives in a RAID array increases, the risk of a drive failure also increases. This can lead to longer rebuild times and increased downtime.
 
-MooseFS, on the other hand, is designed to be highly scalable and can handle very large data sets with ease. MooseFS uses a distributed file system architecture, allowing data to be spread across multiple nodes. This approach enables high levels of parallelism and scalability, and MooseFS can easily handle petabytes of data. For organizations that need to store and manage large amounts of data, MooseFS is an ideal choice.
+MooseFS, on the other hand, is designed to be highly scalable and can handle very large data sets with ease. MooseFS uses a distributed file system architecture, allowing data to be spread across multiple nodes. This approach enables high levels of parallelism and scalability, and MooseFS can handle petabytes of data. For organizations that need to store and manage larger amounts of data, MooseFS is an ideal choice.
 
 ### Data Integrity
 
@@ -59,15 +59,17 @@ On the other hand, MooseFS community edition or pro is designed to support high-
 
 ---
 
-Another advantage of MooseFS is that it supports both all-flash and hybrid storage setups. This means that different manufacturers' disks and servers can be mixed in a single storage system, making it compatible with both old and new technology. In contrast, RAID systems often require all disks to be of the same type and size, which can limit flexibility and increase costs.
+Another advantage of MooseFS is that it supports both all-flash and hybrid storage setups. This means that different manufacturers' disks and servers can be mixed in a single storage system, making it compatible with both old and new technology as well as consumer grade and enterprise grade hardware. In contrast, RAID systems often require all disks to be of the same type and size, which can limit flexibility and increase costs.
 
 Data redundancy is another critical factor to consider when choosing a storage system. RAID uses error correction code algorithms with up to 9 parity sums to ensure data redundancy. However, this approach can be inefficient as it saves less RAW space compared to an ordinary data duplication approach. In contrast, MooseFS ensures data redundancy by using distributed data replication across multiple storage nodes. This means that if one node fails, data can be retrieved from other nodes, eliminating the risk of data loss.
+
+![MooseFS](https://perthserverplus.com/images/moosefs-cluster.png)
 
 ### Global Trash
 
 ---
 
-Another advantageous feature of MooseFS is its virtual, global space for deleted objects, which can be configured for each file and directory. This feature makes it easy to recover accidentally deleted data, a common issue in data storage.
+Another advantageous feature of MooseFS is its virtual, global space for deleted objects, which can be configured for each file and directory. This feature makes it easy to recover accidentally deleted data, a common issue in RAID data storage.
 
 ### Summary
 
