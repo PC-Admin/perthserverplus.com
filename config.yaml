@@ -18,6 +18,7 @@ params:
     - "images/gitlab-pages.png"
     - "images/calendy.png"
     - "images/cloudflare.png"
+    - "images/namesilo.png"
 
   logo: "arrow-up.png"
 

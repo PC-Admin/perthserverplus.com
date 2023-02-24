@@ -18,7 +18,7 @@ This is how I created this very website for FREE using Hugo and other technologi
 
 Disclaimer: before we start, it's important to note that creating a static website is not entirely free. In this post, we will assume that you have already rented a domain name, which can cost anywhere from a few dollars to hundreds of dollars per year. In our case, we rented the perthserverplus.com domain from [www.namesilo.com](https://www.namesilo.com/) for a yearly fee of ~$16 AUD.
 
-![NameSilo Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/NameSilo_Logo.svg/798px-NameSilo_Logo.svg.png)
+![GitLab Pages](https://perthserverplus.com/images/namesilo.png)
 
 ### Hugo Themes
 
@@ -76,7 +76,7 @@ I'll also be using CloudFlare to setup free email forwarding from [michael@perth
 
 ---
 
-![GitLab Pages](https://perthserverplus.com/images/calendy.png)
+![Calendy](https://perthserverplus.com/images/calendy.png)
 
 Finally, we need a way for our clients to book appointments with us. For this, we will use Calendly, a free scheduling system that integrates with our website. Calendly allows us to set up our availability and create custom booking links that we can share with our clients. With Calendly, our clients can easily book appointments with us without having to call or email us.
 
