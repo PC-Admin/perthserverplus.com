@@ -11,5 +11,5 @@ content:
 
   buttonSecondary:
     label: "Contact Us"
-    url: ""
+    url: "#footer"
 

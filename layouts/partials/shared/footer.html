@@ -12,6 +12,8 @@
           {{ with .gitlab }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-24" href="{{ . }}">{{ partial "icons/gitlab2.svg" }}</a></li>{{ end }}
         </ul>
         {{ end }}
+        <img src="https://perthserverplus.com/images/hosted-on-gitlab.png" alt="Hosted on GitLab"><br>
+        <img src="https://gitlab.com/PC-Admin/perthserverplus.com/badges/main/pipeline.svg" alt="Pipeline Badge">
       </div>
       <div class="col-12 col-xl-2 text-center text-xl-start pb-4">
         <h5 class="fs-10 fw-semibold text-primary">About us</h5>
@@ -58,7 +60,7 @@
     <div class="row">
       <div class="col-12">
         {{ with .Site.Params.copyright }}
-          <p class="medium text-black-61 text-center">{{ . }}</p>
+          <p class="medium text-black-61 text-center"><strong>{{ . }}</strong></p>
         {{ end }}
       </div>
     </div>

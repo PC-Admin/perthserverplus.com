@@ -20,6 +20,7 @@ params:
     - "images/cloudflare.png"
     - "images/namesilo.png"
     - "images/portfolio-ecommerce.png"
+    - "images/hosted-on-gitlab.png"
 
   logo: "arrow-up.png"
 
@@ -47,11 +48,11 @@ params:
 menus:
   main:
     - name: "Home"
-      url: "#"
+      url: "https://perthserverplus.com/#"
       weight: 1
 
     - name: "Blog"
-      url: "https://perthserverplus.com/post/"
+      url: "https://perthserverplus.com/blog/"
       weight: 2
 
   buttons:
@@ -62,11 +63,11 @@ menus:
 
   footer:
     - name: "Home"
-      url: "#"
+      url: "https://perthserverplus.com/#"
       weight: 1
 
     - name: "Blog"
-      url: "https://perthserverplus.com/post/"
+      url: "https://perthserverplus.com/blog/"
       weight: 2
 
 taxonomies:
