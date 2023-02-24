@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row pb-5">
       <div class="col-12 col-xl-4 text-center text-xl-start pb-4">
-        <h4 class="fs-4 fw-semibold text-uppercase text-primary">{{ .Site.Title }}</h4>
-        <p class="small text-black-61">{{ .Site.Params.description }}</p>
+        <h3 class="fs-3 fw-semibold text-uppercase text-primary">{{ .Site.Title }}</h3>
+        <p class="medium text-black-61">{{ .Site.Params.description }}</p>
         {{ with .Site.Params.social }}
         <ul class="d-flex justify-content-center justify-content-xl-start list-unstyled">
           {{ with .linkedin }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-24" href="{{ . }}">{{ partial "icons/linkedin2.svg" }}</a></li>{{ end }}
@@ -14,43 +14,50 @@
         {{ end }}
       </div>
       <div class="col-12 col-xl-2 text-center text-xl-start pb-4">
-        <h5 class="fs-6 fw-semibold text-primary">About us</h5>
+        <h5 class="fs-10 fw-semibold text-primary">About us</h5>
         <ul class="list-unstyled">
           {{ range .Site.Menus.footer }}
             <li class="">
-              <a class="small text-black-61 text-decoration-none" href="{{ .URL }}">{{ .Name }}</a>
+              <a class="medium text-black-61 text-decoration-none" href="{{ .URL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>
       </div>
       <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
-        <h5 class="fs-6 fw-semibold text-primary">Location</h5>
+        <h5 class="fs-10 fw-semibold text-primary">Location</h5>
         <ul class="list-unstyled">
           {{ range .Site.Params.location }}
             <li class="d-flex justify-content-center justify-content-xl-start mb-2">
               <div class="d-flex align-items-center text-primary">{{ partial "icons/geo-alt.html" }}</div>
-              <p class="small text-black-61 m-0 ps-2">{{ . }}</p>
+              <p class="medium text-black-61 m-0 ps-2">{{ . }}</p>
             </li>
           {{ end }}
         </ul>
       </div>
       <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
-        <h5 class="fs-6 fw-semibold text-primary">Contact us</h5>
+        <h5 class="fs-10 fw-semibold text-primary">Contact us</h5>
         {{ range .Site.Params.contact }}
           {{ if (strings.HasPrefix . "michael@") }}
-            <p class="small text-black-61 mb-1"><a href="mailto:{{ . }}">{{ . }}</a></p>
+            <p class="medium text-black-61 mb-1"><a href="mailto:{{ . }}">{{ . }}</a></p>
           {{ else if (strings.HasPrefix . "+61") }}
-            <p class="small text-black-61 mb-1"><a href="tel:{{ . }}">{{ . }}</a></p>
+            <p class="medium text-black-61 mb-1"><a href="tel:{{ . }}">{{ . }}</a></p>
           {{ else }}
-            <p class="small text-black-61 mb-1">{{ . }}</p>
+            <p class="medium text-black-61 mb-1">{{ . }}</p>
           {{ end }}
         {{ end }}
+        <ul class="navbar-nav ms-xl-3 mb-2 mb-xl-0">
+          {{ range .Site.Menus.buttons }}
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary text-light px-4" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
         {{ with .Site.Params.copyright }}
-          <p class="small text-black-61 text-center">{{ . }}</p>
+          <p class="medium text-black-61 text-center">{{ . }}</p>
         {{ end }}
       </div>
     </div>

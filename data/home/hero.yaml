@@ -2,7 +2,7 @@ enabled: true
 id: "hero"
 
 content:
-  title: "Your **local** web specialists"
+  title: "Your **local** server specialists"
   text: "Get premium on-site support for your server, service, network or application. We specialise in creating custom solutions for businesses."
 
   buttonPrimary:

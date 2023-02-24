@@ -1,8 +1,8 @@
-enabled: true
+enabled: false
 id: "cta"
 
 content:
-  title: "Start your business now!"
+  title: "Contact us today!"
   image: "images/services-web-development.png"
   button:
     label: "Let's talk"

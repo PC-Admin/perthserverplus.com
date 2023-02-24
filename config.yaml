@@ -11,7 +11,7 @@ summaryLength: 20
 
 params:
   title: "PerthServerPlus+"
-  description: "We specialize in providing services to designing websites, applications, build and maintain business for customers."
+  description: "Get premium on-site support for your server, service, network or application. We specialise in creating custom solutions for businesses."
   images: 
     - "images/hero-image.png"
 
@@ -34,6 +34,7 @@ params:
   contact:
     - "michael@perthserverplus.com"
     - "+61 490 435 377"
+    - "or"
 
   copyright: "© 2023 PerthServerPlus+ All Rights Reserved"
 
@@ -43,21 +44,13 @@ menus:
       url: "/#hero"
       weight: 1
 
-    - name: "Services"
-      url: "/#"
-      weight: 2
-
-    - name: "Pricing"
-      url: "/#"
-      weight: 3
-
     - name: "Blog"
       url: "/blog"
-      weight: 4
+      weight: 2
 
   buttons:
-    - name: "Book a call"
-      url: "/#"
+    - name: "Book a meeting"
+      url: "https://calendly.com/perthserverplus/30min"
       weight: 4
       pre: "btn btn-primary text-light"
 
@@ -66,17 +59,9 @@ menus:
       url: "/#hero"
       weight: 1
 
-    - name: "Services"
-      url: "/#"
-      weight: 2
-
-    - name: "Pricing"
-      url: "/#"
-      weight: 3
-
     - name: "Blog"
       url: "/blog"
-      weight: 4
+      weight: 2
 
 taxonomies:
   series: "series"
