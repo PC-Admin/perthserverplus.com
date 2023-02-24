@@ -31,6 +31,8 @@ MooseFS, on the other hand, offers multiple host redundancy. This feature ensure
 
 ![MooseFS](https://perthserverplus.com/images/moosefs-pro-architecture.png)
 
+A diagram of a MooseFS Pro with multiple master servers.
+
 ### Scalability
 
 ---
@@ -48,7 +50,9 @@ Data integrity is also a critical issue in data storage. RAID provides some leve
 MooseFS offers efficient atomic snapshotting, ensuring that data integrity is maintained at all times. With atomic snapshotting, MooseFS takes a snapshot of the data at a specific point in time, ensuring that any changes made to the data are not reflected until the snapshot is complete. This approach ensures that even if there is data corruption, the snapshot can be used to restore the data to a known good state.
 
 
-![MooseFS](https://perthserverplus.com/images/moosefs-master.png)
+![MooseFS](https://perthserverplus.com/images/moosefs-preview.gif)
+
+Here we can see an overview of a 4-host MooseFS Community Edition system.
 
 ### Performance
 
@@ -67,6 +71,8 @@ Another advantage of MooseFS is that it supports both all-flash and hybrid stora
 Data redundancy is another critical factor to consider when choosing a storage system. RAID uses error correction code algorithms with up to 9 parity sums to ensure data redundancy. However, this approach can be inefficient as it saves less RAW space compared to an ordinary data duplication approach. In contrast, MooseFS ensures data redundancy by using distributed data replication across multiple storage nodes. This means that if one node fails, data can be retrieved from other nodes, eliminating the risk of data loss.
 
 ![MooseFS](https://perthserverplus.com/images/moosefs-cluster.png)
+
+MooseFS can combine many different types of hardware into one storage cluster.
 
 ### Global Trash
 

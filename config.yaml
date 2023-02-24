@@ -25,6 +25,7 @@ params:
     - "images/moosefs-pro-architecture.png"
     - "images/moosefs-cluster.png"
     - "images/moosefs-master.png"
+    - "images/moosefs-preview.gif"
 
   logo: "arrow-up.png"
 
