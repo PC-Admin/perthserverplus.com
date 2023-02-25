@@ -40,6 +40,16 @@ We then need to select a Hugo themes that fits our needs. Hugo has a wide variet
 
 https://themes.gohugo.io/
 
+
+### Gitlab Repository
+
+---
+
+You need to host your hugo project in a GitLab repository to use Gitlab Pages, I'm not going to explain the process in this article, but here is this websites repository if you're looking for inspiration:
+
+https://gitlab.com/PC-Admin/perthserverplus.com
+
+
 ### Gitlab Pages
 
 ---
