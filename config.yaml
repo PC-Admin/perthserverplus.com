@@ -11,7 +11,7 @@ summaryLength: 20
 
 params:
   title: "PerthServerPlus+"
-  description: "Get premium on-site support for your server, service, network or application. We specialise in creating custom solutions for businesses."
+  description: "Get premium on-site support for your server, service, network or application. As an experienced programmer, I specialise in developing custom solutions for peoples businesses."
   images: 
     - "images/hero-image.png"
     - "images/hugo-themes.png"
