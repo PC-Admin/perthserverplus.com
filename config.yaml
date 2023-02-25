@@ -58,7 +58,7 @@ menus:
       weight: 1
 
     - name: "Blog"
-      url: "https://perthserverplus.com/blog/"
+      url: "https://perthserverplus.com/post/"
       weight: 2
 
   buttons:
@@ -73,7 +73,7 @@ menus:
       weight: 1
 
     - name: "Blog"
-      url: "https://perthserverplus.com/blog/"
+      url: "https://perthserverplus.com/post/"
       weight: 2
 
 taxonomies:
