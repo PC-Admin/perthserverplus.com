@@ -22,7 +22,7 @@ This is how I created this very website for FREE using Hugo and other technologi
 
 **Disclaimer #1:** before we start, it's important to note that creating a static website is not entirely free. In this post, we will assume that you have already rented a domain name, which can cost anywhere from a few dollars to hundreds of dollars per year. In our case, we rented the perthserverplus.com domain from [www.namesilo.com](https://www.namesilo.com/) for a yearly fee of ~$16 AUD.
 
-**Disclaimer #2:** this guide assumes you're already familiar with Git and html/markdown/css development.
+**Disclaimer #2:** this guide assumes you're already familiar with Git and HTML/Markdown/CSS development.
 
 ![NameSilo](https://perthserverplus.com/images/namesilo.png#center)
 
