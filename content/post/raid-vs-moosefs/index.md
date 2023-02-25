@@ -12,7 +12,7 @@ tags = [
 +++
 
 
-![MooseFS](https://perthserverplus.com/images/moosefs.png)
+![MooseFS](https://perthserverplus.com/images/moosefs.png#center)
 
 ### Your Network Storage
 
@@ -29,9 +29,9 @@ One of the primary issues with RAID is the risk of a single point of failure. In
 
 MooseFS, on the other hand, offers multiple host redundancy. This feature ensures that there is no single point of failure, meaning that even if one or more of the physical drives fails, the data will still be accessible from another node. This redundancy prevents downtime and data loss, providing peace of mind for organizations storing important data.
 
-![MooseFS](https://perthserverplus.com/images/moosefs-pro-architecture.png)
+![MooseFS](https://perthserverplus.com/images/moosefs-pro-architecture.png#center)
 
-A diagram of a MooseFS Pro with multiple master servers.
+_A diagram of a MooseFS Pro with multiple master servers._
 
 ### Scalability
 
@@ -50,9 +50,9 @@ Data integrity is also a critical issue in data storage. RAID provides some leve
 MooseFS offers efficient atomic snapshotting, ensuring that data integrity is maintained at all times. With atomic snapshotting, MooseFS takes a snapshot of the data at a specific point in time, ensuring that any changes made to the data are not reflected until the snapshot is complete. This approach ensures that even if there is data corruption, the snapshot can be used to restore the data to a known good state.
 
 
-![MooseFS](https://perthserverplus.com/images/moosefs-preview.gif)
+![MooseFS](https://perthserverplus.com/images/moosefs-preview.gif#center)
 
-Here we can see an overview of a 4-host MooseFS Community Edition system.
+_Here we can see a preview of my own 4-host MooseFS Community Edition system._
 
 ### Performance
 
@@ -70,9 +70,9 @@ Another advantage of MooseFS is that it supports both all-flash and hybrid stora
 
 Data redundancy is another critical factor to consider when choosing a storage system. RAID uses error correction code algorithms with up to 9 parity sums to ensure data redundancy. However, this approach can be inefficient as it saves less RAW space compared to an ordinary data duplication approach. In contrast, MooseFS ensures data redundancy by using distributed data replication across multiple storage nodes. This means that if one node fails, data can be retrieved from other nodes, eliminating the risk of data loss.
 
-![MooseFS](https://perthserverplus.com/images/moosefs-cluster.png)
+![MooseFS](https://perthserverplus.com/images/moosefs-cluster.png#center)
 
-MooseFS can combine many different types of hardware into one storage cluster.
+_MooseFS can combine many different types of hardware into one storage cluster._
 
 ### Global Trash
 
@@ -84,6 +84,6 @@ Another advantageous feature of MooseFS is its virtual, global space for deleted
 
 ---
 
-In conclusion, while RAID has been a popular choice for many years, it is not without its drawbacks. RAID can be dangerous and can cause more downtime when compared to MooseFS Community Edition or Pro. MooseFS offers multiple host redundancy ensuring there's no single point of failure, efficient atomic snapshotting, high reliability, parallelism, and scalability. These features make MooseFS an excellent choice for organizations looking to store and manage large amounts of data while minimizing the risk of downtime and data loss. By choosing MooseFS over RAID, organizations can ensure that their data is safe,
+In conclusion, while RAID has been a popular choice for many years, it is not without its drawbacks. RAID can be dangerous and can cause more downtime when compared to MooseFS Community Edition or Pro. MooseFS offers multiple host redundancy ensuring there's no single point of failure, efficient atomic snapshotting, high reliability, parallelism, and scalability. These features make MooseFS an excellent choice for organizations looking to store and manage large amounts of data while minimizing the risk of downtime and data loss. Overall, these features make MooseFS a superior option for organizations looking for a reliable and efficient storage system.
 
-In conclusion, while RAID may be a familiar term for data storage, it's becoming increasingly clear that it's a risky option compared to MooseFS community edition or pro. While RAID offers some redundancy, its reliance on a single central server or network connection can result in slower data access times and increased downtime. In contrast, MooseFS is designed to support high-performance I/O operations and can handle large amounts of data quickly and efficiently. It offers both all-flash and hybrid storage setups, ensuring compatibility with both old and new technology. MooseFS also ensures data redundancy by using distributed data replication across multiple storage nodes, eliminating the risk of data loss. Finally, MooseFS's virtual, global space for deleted objects makes data recovery easy and efficient. Overall, these features make MooseFS a superior option for organizations looking for a reliable and efficient storage system.
+Are you considering deploying MooseFS as a network storage solution for your company? If so, I invite you to schedule a complimentary consultation with me to explore the ways in which MooseFS could enhance your business.

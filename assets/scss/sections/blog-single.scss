@@ -1,10 +1,18 @@
 .blog-content {
-  max-width: 900px;
+  max-width: 980px;
 
   .highlight {
     pre {
       padding: 16px;
       border-radius: 8px;
     }
+  }
+
+  img[src$='#center'] {
+    display: block;
+    margin: 1.0rem auto;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
   }
 }
