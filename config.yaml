@@ -29,6 +29,7 @@ params:
     - "images/website-preview.png"
     - "images/solokey-diagram.png"
     - "images/solokeys-photo.png"
+    - "images/solokey-google.png"
   logo: "arrow-up.png"
 
   favicons:

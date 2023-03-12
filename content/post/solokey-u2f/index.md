@@ -34,6 +34,11 @@ After learning about the benefits of U2F security keys, I decided to purchase a 
 
 Using U2F authentication was an easy and quick experience. Instead of having to type in a code or wait for a text message, all I had to do was insert the key and press the button. It was a relief to know that my online accounts were now much more secure than before.
 
+
+![Solokeys Photo](https://perthserverplus.com/images/solokey-google.png#center)
+
+_Securing my Google account with my new U2F keys._
+
 ## Securing Server Access and GitHub/GitLab Commits with U2F
 
 As a software developer, I also needed to secure my server access and GitHub/GitLab commits. With U2F, I could achieve this effortlessly by using the key with SSH. I set up my SSH client to require U2F authentication and then registered the SoloKey as a security key on my server and GitHub/GitLab accounts. Whenever I needed to log in to my server or make a commit, I would insert the key and press the button to authenticate myself.
