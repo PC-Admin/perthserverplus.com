@@ -27,7 +27,8 @@ params:
     - "images/moosefs-master.png"
     - "images/moosefs-preview.gif"
     - "images/website-preview.png"
-
+    - "images/solokey-diagram.png"
+    - "images/solokeys-photo.png"
   logo: "arrow-up.png"
 
   favicons:
