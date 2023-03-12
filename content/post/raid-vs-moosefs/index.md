@@ -2,7 +2,7 @@
 +++
 author = "Michael Collins"
 title = "RAID vs MooseFS"
-date = "2023-02-24"
+date = "2023-02-27"
 description = "Why RAID is putting your business at risk and you should consider switching to MooseFS."
 tags = [
     "web hosting",
