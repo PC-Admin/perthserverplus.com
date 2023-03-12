@@ -14,6 +14,8 @@ tags = [
 
 ![Solokey Diagram](https://perthserverplus.com/images/solokey-diagram.png#center)
 
+_A diagram of a Solokey V1.2_
+
 In the modern digital age, online security is of utmost importance. With numerous data breaches and cyber attacks happening every day, it's essential to take all necessary measures to protect our sensitive information. One of the most effective ways to achieve this is by using a Universal 2nd Factor (U2F) security key. In this article, we'll explore the advantages of U2F security keys over traditional OTP and text 2FA, along with my personal experience of securing my online accounts and computer systems using U2F.
 
 ## What is a U2F Security Key?
@@ -23,6 +25,8 @@ A U2F security key is a physical device that is used for two-factor authenticati
 Compared to traditional OTP and text 2FA, U2F security keys provide a higher level of security. OTPs and text 2FA are vulnerable to phishing attacks, where attackers can trick users into providing their login credentials. With U2F, the user's private key never leaves the device, making it virtually impossible for attackers to gain access to their accounts.
 
 ![Solokeys Photo](https://perthserverplus.com/images/solokeys-photo.png#center)
+
+_It's recommended to use 2 Solokeys so you can keep one as the backup._
 
 ## Securing Online Accounts with U2F
 
