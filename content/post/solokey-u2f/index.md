@@ -42,6 +42,48 @@ Using U2F authentication was an easy and quick experience. Instead of having to 
 
 _Securing my Google account with my new U2F keys._
 
+## Solokey Setup (Linux only)
+
+---
+
+First install prerequisite packages:
+```
+pcadmin@workstation:~/$ sudo apt install git llvm clang libclang-dev gcc-arm-none-eabi gdb-arm-none-eabi libc6-dev-i386
+```
+
+Then connect your Solokeys and add a pin then update them one by one:
+```
+pcadmin@workstation:~/$ solo key update
+Wrote temporary copy of firmware-4.1.5.json to /tmp/tmp3qnvhtlp.json
+sha256sums coincide: f36bb365bfddf75004f28af392ae1439192ca0ed821ef49429675a00d05087a
+using signature version >2.5.3
+erasing firmware...
+updated firmware 100%             
+time: 9.25 s
+bootloader is verifying signature...
+...pass!
+
+Congratulations, your key was updated to the latest firmware version: 4.1.5
+
+pcadmin@workstation:~/$ solo key set-pin
+Please enter new pin: 
+Please confirm new pin: 
+Done. Please use new pin to verify key
+```
+
+Generating the SSH key requires the `-O resident` flag to ensure the credential is discoverable:
+```
+pcadmin@workstation:~$ ssh-keygen -t ed25519-sk -O resident -f ~/.ssh/michael2023-red -C "Michael Collins 2023 - Red Key - michael@perthchat.org"
+```
+
+If done properly you can check the new openssh credential on your solokey:
+```
+$  solo key credential ls
+PIN: 
+Relying Party       Username            Credential ID
+-----------------------------------------------------
+ssh:                openssh             qPxzGbiMX5uvJOSWnDkvMGQgqhkiNIKvK5dI4XogHQG8ZuMGEOihYhFZYP4ewiPmUpyfS26AIA3LXlwyHIrx4rG/LwEAAA==
+```
 
 ## Securing Server Access and GitHub/GitLab Commits with U2F
 
@@ -54,6 +96,7 @@ Using U2F authentication for server access and GitHub/GitLab commits added an ex
 ![Solokeys GitHub](https://perthserverplus.com/images/solokey-github.png#center)
 
 _Securing my GitHub account so that commits require me to press the solokeys button._
+
 
 ## Securing My GNOME Desktop with U2F
 
