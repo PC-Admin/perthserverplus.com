@@ -46,14 +46,14 @@ _Securing my Google account with my new U2F keys._
 
 ---
 
-First install prerequisite packages:
+**First install prerequisite packages:**
 ```
-pcadmin@workstation:~/$ sudo apt install git llvm clang libclang-dev gcc-arm-none-eabi gdb-arm-none-eabi libc6-dev-i386
+$ sudo apt install git llvm clang libclang-dev gcc-arm-none-eabi gdb-arm-none-eabi libc6-dev-i386
 ```
 
-Then connect your Solokeys and add a pin then update them one by one:
+**Then connect your Solokeys and add a pin then update them one by one:**
 ```
-pcadmin@workstation:~/$ solo key update
+$ solo key update
 Wrote temporary copy of firmware-4.1.5.json to /tmp/tmp3qnvhtlp.json
 sha256sums coincide: f36bb365bfddf75004f28af392ae1439192ca0ed821ef49429675a00d05087a
 using signature version >2.5.3
@@ -71,12 +71,12 @@ Please confirm new pin:
 Done. Please use new pin to verify key
 ```
 
-Generating the SSH key requires the `-O resident` flag to ensure the credential is discoverable:
+**Generating the SSH key requires the `-O resident` flag to ensure the credential is discoverable:**
 ```
-pcadmin@workstation:~$ ssh-keygen -t ed25519-sk -O resident -f ~/.ssh/michael2023-red -C "Michael Collins 2023 - Red Key - michael@perthchat.org"
+$ ssh-keygen -t ed25519-sk -O resident -f ~/.ssh/michael2023-red -C "Michael Collins 2023 - Red Key - michael@perthchat.org"
 ```
 
-If done properly you can check the new openssh credential on your solokey:
+**If done properly you can check the new openssh credential on your solokey:**
 ```
 $  solo key credential ls
 PIN: 
