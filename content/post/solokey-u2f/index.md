@@ -147,7 +147,8 @@ auth    sufficient      pam_u2f.so
 ---
 
 Overall I'm pretty happy with my Solokey v1 devices, they are affordable and more importantly reputable due to having both open-source hardware and software. I'm also looking forward to the release of the [new SoloKey v2](https://www.kickstarter.com/projects/conorpatrick/solo-v2-safety-net-against-phishing), it apparently has NFC, reversible USB-A and a more secure and open source friendly microcontroller:
-
-> There are a lot of secure microcontrollers out there, but very few that can be used for open source projects. Our LPC55S69 is one of the latest by NXP and doesn't require a thicket of NDAs. It supports secure boot, TrustZone, asymmetric crypto acceleration (ECC, RSA), PUF, and filesystem encryption. Together, these features enable a high level of security, secure firmware updates, speedy operations, and passive NFC operation.
+```
+There are a lot of secure microcontrollers out there, but very few that can be used for open source projects. Our LPC55S69 is one of the latest by NXP and doesn't require a thicket of NDAs. It supports secure boot, TrustZone, asymmetric crypto acceleration (ECC, RSA), PUF, and filesystem encryption. Together, these features enable a high level of security, secure firmware updates, speedy operations, and passive NFC operation.
+```
 
 I would recommend investing in a U2F security key and using it to secure your online accounts, server access, and computer systems. It may require a bit of initial setup, but it is well worth it if your organisation requires the extra security or ease-of-use that U2F can provide.
