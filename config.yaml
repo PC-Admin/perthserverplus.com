@@ -78,6 +78,10 @@ menus:
       url: "https://perthserverplus.com/post/"
       weight: 2
 
+    - name: "Privacy Policy"
+      url: "https://perthserverplus.com/legal/privacy-policy/"
+      weight: 3
+
 taxonomies:
   series: "series"
   tags: "tags"
