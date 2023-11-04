@@ -3,7 +3,7 @@
 author = "Michael Collins"
 title = "Discovery: Finding Authentic Solutions"
 date = "2023-11-01"
-description = "Paying me to investigate if your plans and assumptions are misguided can save you money and time!"
+description = "It's worth checking if your plans are misguided before you start spending money."
 tags = [
     "consultation",
     "business",
@@ -14,9 +14,6 @@ tags = [
 +++
 
 ![Tied Up Goat, by Torsten Dederichs](https://perthserverplus.com/images/tied-up-goat.jpg#center)
-
-_It's worth checking if your plans are misguided before you start spending money._
-
 
 ## Introduction
 
