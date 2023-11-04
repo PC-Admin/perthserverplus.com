@@ -56,7 +56,7 @@ In my practice, I take pride in challenging my clients’ assumptions, encouragi
 
 Let’s consider the story of another IT contractor I know, who for this article we'll call “Bob”. Bob's a provider who has found comfort and profit in selling tape backups. Bob is well aware that an encrypted backup to off-site cloud storage is a more robust, modern solution. However, he chooses to sideline this option as it doesn’t promise the same recurring revenue that tape backups do. Bob’s story serves as a stark reminder of the pitfalls of complacency and the importance of prioritizing client needs over personal gain.
 
-![Statue Poop, by Mark König](https://perthserverplus.com/images/status-poop.jpg#center)
+![Statue Poop, by Mark König](https://perthserverplus.com/images/statue-poop.jpg#center)
 
 _What you were planning might be stupid._
 
