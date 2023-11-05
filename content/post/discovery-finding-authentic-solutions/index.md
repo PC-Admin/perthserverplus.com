@@ -55,7 +55,7 @@ Let’s consider the story of another IT contractor I know, who for this article
 
 ![Statue Poop, by Mark König](https://perthserverplus.com/images/statue-poop.jpg#center)
 
-_What you were planning might be stupid._
+_The solution you wanted might be unwise or even unnecessary._
 
 
 ## A Genuine Desire to Help
