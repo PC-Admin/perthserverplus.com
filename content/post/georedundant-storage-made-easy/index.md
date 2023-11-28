@@ -53,7 +53,7 @@ _"If all OSDs and monitors in one of the data centers become inaccessible at onc
 
 ![A preview of a cluster that's entered degraded stretch mode.](https://perthserverplus.com/images/degraded-stretch-mode.png#center)
 
-_A cluster in degraded stretch mode that's lost one of its datacenters. It keeps serving data and allowing writes._
+_Here we see a cluster in "degraded stretch mode" that's lost one of its datacenters. It keeps serving data and allowing writes._
 
 
 ## The Benefits of Stretch Mode
@@ -69,7 +69,7 @@ _A cluster in degraded stretch mode that's lost one of its datacenters. It keeps
 
 ---
 
-- It's only suitable for 2 sites, if you want to replicate data across more than 2 sites you'll need to set up a [multi-site cluster](https://docs.ceph.com/en/quincy/radosgw/multisite/).
+- It's only suitable for 2 sites, if you want to replicate data across more than 2 sites you'll need to create a [multi-site setup](https://docs.ceph.com/en/quincy/radosgw/multisite/).
 - It's only suitable if your OSD devices are SSDs, as the latency of HDDs is too high to make this work.
 - It's only suitable if your sites are close together, as the latency between sites needs to be low enough to make this work.
 - Writes are slow, this is because Ceph needs to write an object to both sites before it can acknowledge the write.
@@ -80,12 +80,16 @@ Ceph also has a feature called "stretch mode" which allows you to replicate data
 
 ## My Install Guide for Stretch Mode
 
+---
+
 I've published a guide for creating a stretch mode cluster, it can be used to help you examine if a stretch mode cluster is appropriate for your own use case:
 
 https://github.com/PC-Admin/cephfs-stress-test/blob/main/stretch_mode_setup.md
 
 
 ## Testing Site Failure
+
+---
 
 I went to the extra effort of testing an abrupt site failure on this cluster, I did this by forcibly shutting off the VMs in datacenter a1. The filesystem became unresponsive for 33 seconds, and then it was back to normal.
 
@@ -99,6 +103,8 @@ Stretch mode seems to be very resilient and allows clients to keep accessing the
 
 
 ## Conclusion
+
+---
 
 Stretch mode is a great feature that allows you to replicate data across multiple sites without having to set up a full-blown multi-site cluster with multiple clusters and a lot of added complexity. It'so cheaper than a multi-site setup, as a multi-site setup requires running a duplicate amount of hardware in both locations to host 3 copies in each. While a stretch mode cluster only keeps 2 copies in each location.
 
