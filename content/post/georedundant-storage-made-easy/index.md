@@ -1,7 +1,7 @@
 
 +++
 author = "Michael Collins"
-title = "Ceph's Stretch Mode - Georedundant Storage Made Easy!"
+title = "Ceph's Stretch Mode: Georedundant Storage Made Easy!"
 date = "2023-11-28"
 description = "Georedundant storage made easy, with Cephs little known 'Stretch Mode' feature."
 tags = [
@@ -36,8 +36,13 @@ CRUSH picks OSDs at random to write data to, it doesn't guarantee that data will
 
 https://docs.ceph.com/en/latest/rados/operations/stretch-mode/#stretch-cluster-issues
 
-> For example, in a scenario in which there are two data centers named Data Center A and Data Center B, and the CRUSH rule targets three replicas and places a replica in each data center with a min_size of 2, the PG might go active with two replicas in Data Center A and zero replicas in Data Center B. In a situation of this kind, the loss of Data Center A means that the data is lost and Ceph will not be able to operate on it. This situation is surprisingly difficult to avoid using only standard CRUSH rules. 
+> "For example, in a scenario in which there are two data centers named Data Center A and Data Center B, and the CRUSH rule targets three replicas and places a replica in each data center with a min_size of 2, the PG might go active with two replicas in Data Center A and zero replicas in Data Center B. In a situation of this kind, the loss of Data Center A means that the data is lost and Ceph will not be able to operate on it. This situation is surprisingly difficult to avoid using only standard CRUSH rules."
 
+[^1]: "For example, in a scenario in which there are two data centers named Data Center A and Data Center B, and the CRUSH rule targets three replicas and places a replica in each data center with a min_size of 2, the PG might go active with two replicas in Data Center A and zero replicas in Data Center B. In a situation of this kind, the loss of Data Center A means that the data is lost and Ceph will not be able to operate on it. This situation is surprisingly difficult to avoid using only standard CRUSH rules."
+
+```
+"For example, in a scenario in which there are two data centers named Data Center A and Data Center B, and the CRUSH rule targets three replicas and places a replica in each data center with a min_size of 2, the PG might go active with two replicas in Data Center A and zero replicas in Data Center B. In a situation of this kind, the loss of Data Center A means that the data is lost and Ceph will not be able to operate on it. This situation is surprisingly difficult to avoid using only standard CRUSH rules."
+```
 
 ## How Stretch Mode Works
 
@@ -45,9 +50,11 @@ https://docs.ceph.com/en/latest/rados/operations/stretch-mode/#stretch-cluster-i
 
 The standard configuration for stretch mode is 2 datacenters with a roughly equal amount of OSDs in each. Each site holds 2 copies of the data with a total replication size of 4. New writes are written once to both sites before they are acknowledged by Ceph. A third site is used as a tiebreaker, which doesn't contain any OSDs. In the event that the network between the 2 sites is cut, the tiebreaker site will be used to determine which site is the primary site. When the network between the 2 sites is restored, the secondary site will be brought back online and the data will be resynced.
 
-In the event that one datacenter is lost, the cluster will enter a special "degraded stretch mode" described here: https://docs.ceph.com/en/latest/rados/operations/stretch-mode/#entering-stretch-mode
+In the event that one datacenter is lost, the cluster will enter a special "degraded stretch mode" described here:
 
-> If all OSDs and monitors in one of the data centers become inaccessible at once, the surviving data center enters a “degraded stretch mode”. A warning will be issued, the min_size will be reduced to 1, and the cluster will be allowed to go active with the data in the single remaining site. The pool size does not change, so warnings will be generated that report that the pools are too small -- but a special stretch mode flag will prevent the OSDs from creating extra copies in the remaining data center. This means that the data center will keep only two copies, just as before.
+https://docs.ceph.com/en/latest/rados/operations/stretch-mode/#entering-stretch-mode
+
+> "If all OSDs and monitors in one of the data centers become inaccessible at once, the surviving data center enters a “degraded stretch mode”. A warning will be issued, the min_size will be reduced to 1, and the cluster will be allowed to go active with the data in the single remaining site. The pool size does not change, so warnings will be generated that report that the pools are too small -- but a special stretch mode flag will prevent the OSDs from creating extra copies in the remaining data center. This means that the data center will keep only two copies, just as before."
 
 ![A preview of a cluster that's entered degraded stretch mode.](https://perthserverplus.com/images/degraded-stretch-mode.png#center)
 
