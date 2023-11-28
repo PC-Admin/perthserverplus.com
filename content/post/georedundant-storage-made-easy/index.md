@@ -16,6 +16,7 @@ tags = [
 ]
 +++
 
+![Ceph Cover Image](https://perthserverplus.com/images/ceph-cover.png#center)
 
 ## Geo-Redundant Storage Made Easy
 
