@@ -40,9 +40,10 @@ https://docs.ceph.com/en/latest/rados/operations/stretch-mode/#stretch-cluster-i
 
 [^1]: "For example, in a scenario in which there are two data centers named Data Center A and Data Center B, and the CRUSH rule targets three replicas and places a replica in each data center with a min_size of 2, the PG might go active with two replicas in Data Center A and zero replicas in Data Center B. In a situation of this kind, the loss of Data Center A means that the data is lost and Ceph will not be able to operate on it. This situation is surprisingly difficult to avoid using only standard CRUSH rules."
 
-```
-"For example, in a scenario in which there are two data centers named Data Center A and Data Center B, and the CRUSH rule targets three replicas and places a replica in each data center with a min_size of 2, the PG might go active with two replicas in Data Center A and zero replicas in Data Center B. In a situation of this kind, the loss of Data Center A means that the data is lost and Ceph will not be able to operate on it. This situation is surprisingly difficult to avoid using only standard CRUSH rules."
-```
+<blockquote>
+  "For example, in a scenario in which there are two data centers named Data Center A and Data Center B, and the CRUSH rule targets three replicas and places a replica in each data center with a min_size of 2, the PG might go active with two replicas in Data Center A and zero replicas in Data Center B. In a situation of this kind, the loss of Data Center A means that the data is lost and Ceph will not be able to operate on it. This situation is surprisingly difficult to avoid using only standard CRUSH rules."
+</blockquote>
+
 
 ## How Stretch Mode Works
 
@@ -65,10 +66,8 @@ _A cluster in degraded stretch mode that's lost one of its datacenters. It keeps
 
 ---
 
-- It's easy to set up, you don't need to run multiple Ceph clusters or configure complex replication rules.
-- It's easy to manage, you don't need to worry about the complexity of a multi-site setup.
-- It's easy to test, you can simulate a datacenter failure by isolating the network and power to one of the sites.
-- Greater redundancy, by just creating a Ceph cluster that spans 2 sites you get no guarantees that the data actually exists on both sites. This is due to the way Ceph's CRUSH algoritm works, where it will attempt to spread data over OSDs, but ensuring redundancy across multiple failure domains is surprisingly difficult.
+- Cross-site data redundancy and high availability.
+- It's easier to set up then a multi-site configuration, you don't need to run multiple Ceph clusters or configure zones, realms and endpoints.
 - It's cheaper than a multi-site setup, as a multi-site setup requires running a duplicate amount of hardware in both locations to host 3 copies in each. While a stretch mode cluster only keeps 2 copies in each location.
 
 
