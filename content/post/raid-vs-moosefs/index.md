@@ -5,9 +5,15 @@ title = "RAID vs MooseFS"
 date = "2023-02-27"
 description = "Why RAID is putting your business at risk and you should consider switching to MooseFS."
 tags = [
-    "web hosting",
-    "business",
-    "meta"
+    "raid",
+    "moosefs",
+    "storage",
+    "data",
+    "redundancy",
+    "reliability",
+    "scalability",
+    "performance",
+    "data integrity"
 ]
 +++
 

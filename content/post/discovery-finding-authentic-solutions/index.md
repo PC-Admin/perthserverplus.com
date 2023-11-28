@@ -15,7 +15,7 @@ tags = [
 
 ![Tied Up Goat, by Torsten Dederichs](https://perthserverplus.com/images/tied-up-goat.jpg#center)
 
-## Introduction
+## The Value of Discovery
 
 ---
 

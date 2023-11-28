@@ -5,8 +5,8 @@ title = "Solokey U2F"
 date = "2023-03-12"
 description = "How I secured my digital life with Solokey and U2F authentication."
 tags = [
-    "web hosting",
-    "business",
+    "security keys",
+    "authentication",
     "cybersecurity",
     "2fa",
     "u2f"
