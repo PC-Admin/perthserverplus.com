@@ -22,9 +22,9 @@ tags = [
 
 ---
 
-Georedundant storage is hard, companies pay a lot of money for serious guarantees that their data will not only be replicated across multiple locations but that it'll be available to them when they need it. This is a problem that has been solved by the likes of Amazon, Google, and Microsoft, but it's not a problem that has been solved for the rest of us. Until now.
+Georedundant storage is hard, companies pay a lot of money for serious guarantees that their data will not only be replicated across multiple locations but that it'll be available to them when they need it. This is a problem that's difficult to solve, and it's why companies like AWS charge so much for their multi-region storage solutions.
 
-Ceph is a distributed storage system that is designed to be highly available and fault-tolerant. It spreads data across multiple 'nodes' (hosts) and disks, so that if one node or disk fails, that data is still available. Configuring Ceph to make data redundant across one site can be a challenge, but this is made even more difficult when you want to replicate data across multiple sites while ensuring reliability. A multi-site Ceph setup requires running multiple Ceph clusters in an active-active or active-passive configuration, it is significantly more complex than a single-site setup.
+Ceph is an open source distributed storage system that is designed to be highly available and fault-tolerant. It spreads data across multiple 'nodes' (hosts) and disks, so that if one node or disk fails, that data is still available. Configuring Ceph to make data redundant across one site can be a challenge, but this is made even more difficult when you want to replicate data across multiple sites while ensuring reliability. A multi-site Ceph setup requires running multiple Ceph clusters in an active-active or active-passive configuration, it is significantly more complex than a single-site setup.
 
 This is where Ceph's "stretch mode" feature comes in. If you only want to distribute data across 2 sites and you want to avoid the complexity of a multi-site setup, stretch mode is the happy middle ground you're looking for.
 
@@ -72,15 +72,19 @@ _Here we see a cluster in "degraded stretch mode" that's lost one of its datacen
 
 - It's only suitable for 2 sites, if you want to replicate data across more than 2 sites you'll need to create a [multi-site setup](https://docs.ceph.com/en/quincy/radosgw/multisite/).
 - It's only suitable if your OSD devices are SSDs, as the latency of HDDs is too high to make this work.
-- It's only suitable if your sites are close together, as the latency between sites needs to be low enough to make this work.
+- Erasure coded pools cannot be used or created while using stretch mode.
 - Writes are slow, this is because Ceph needs to write an object to both sites before it can acknowledge the write.
+
+To find out more about the limitations of stretch mode see the officical documentation here:
+
+https://docs.ceph.com/en/latest/rados/operations/stretch-mode/#limitations-of-stretch-mode
 
 
 ## Install Guide for Ceph's Stretch Mode
 
 ---
 
-I've published a guide for creating a stretch mode cluster, it can be used to help you examine if a stretch mode cluster is appropriate for your own use case:
+I've published a guide for creating a small testing cluster with stretch mode enabled, it can be used to help you examine if a stretch mode is appropriate for your own use case:
 
 https://github.com/PC-Admin/cephfs-stress-test/blob/main/stretch_mode_setup.md
 
