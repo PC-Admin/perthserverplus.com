@@ -87,6 +87,10 @@ I've published a guide for creating a stretch mode cluster, it can be used to he
 
 https://github.com/PC-Admin/cephfs-stress-test/blob/main/stretch_mode_setup.md
 
+![Ceph Stretch Mode](https://perthserverplus.com/images/ceph-stretch-mode.gif#center)
+
+_This is a preview of my own 2-site stretch mode cluster._
+
 
 ## Testing Site Failure
 
@@ -109,4 +113,4 @@ Stretch mode seems to be very resilient and allows clients to keep accessing the
 
 Stretch mode is a great feature that allows you to replicate data across multiple sites without having to set up a full-blown multi-site cluster with multiple clusters and a lot of added complexity. It'so cheaper than a multi-site setup, as a multi-site setup requires running a duplicate amount of hardware in both locations to host 3 copies in each. While a stretch mode cluster only keeps 2 copies in each location.
 
-If you need assistance with your Ceph setup, or your interested in upgrading to a stretch mode cluster, please [contact me](https://perthserverplus.com/contact/) for a free consultation.
+If you need assistance with your Ceph setup, or your interested in upgrading to a stretch mode cluster, please contact me for a free consultation.
