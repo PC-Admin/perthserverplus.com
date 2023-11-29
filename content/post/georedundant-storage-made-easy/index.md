@@ -76,10 +76,7 @@ _Here we see a cluster in "degraded stretch mode" that's lost one of its datacen
 - Writes are slow, this is because Ceph needs to write an object to both sites before it can acknowledge the write.
 
 
-Ceph also has a feature called "stretch mode" which allows you to replicate data across multiple datacenters without having to set up a full-blown multi-site cluster with multiple clusters and a lot of complexity.
-
-
-## My Install Guide for Stretch Mode
+## Install Guide for Ceph's Stretch Mode
 
 ---
 
@@ -90,7 +87,6 @@ https://github.com/PC-Admin/cephfs-stress-test/blob/main/stretch_mode_setup.md
 ![Ceph Stretch Mode](https://perthserverplus.com/images/ceph-stretch-mode.gif#center)
 
 _This is a preview of my own 2-site stretch mode cluster._
-
 
 ## Testing Site Failure
 
