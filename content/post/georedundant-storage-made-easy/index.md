@@ -3,7 +3,7 @@
 author = "Michael Collins"
 title = "Ceph's Stretch Mode: Georedundant Storage Made Easy!"
 date = "2023-11-28"
-description = "Georedundant storage made easy, with Cephs little known 'Stretch Mode' feature."
+description = "Georedundant storage made easy, with Ceph's little known 'Stretch Mode' feature."
 tags = [
     "storage",
     "ceph",
@@ -62,7 +62,7 @@ _Here we see a cluster in "degraded stretch mode" that's lost one of its datacen
 ---
 
 - Cross-site data redundancy and high availability.
-- It's easier to set up then a multi-site configuration, you don't need to run multiple Ceph clusters or configure zones, realms and endpoints.
+- It's easier to set up than a multi-site configuration; you don't need to run multiple Ceph clusters or configure zones, realms and endpoints.
 - It's cheaper than a multi-site setup, as a multi-site setup requires running a duplicate amount of hardware in both locations to host 3 copies in each. While a stretch mode cluster only keeps 2 copies in each location.
 
 
@@ -96,7 +96,7 @@ _This is a preview of my own 2-site stretch mode cluster._
 
 ---
 
-I went to the extra effort of testing an abrupt site failure on this cluster, I did this by forcibly shutting off the VMs in datacenter a1. The filesystem became unresponsive for 33 seconds, and then it was back to normal.
+I also tested an abrupt site failure on this cluster, I did this by forcibly shutting off the VMs in datacenter a1. The filesystem became unresponsive for 33 seconds, and then it was back to normal.
 
 I then tested a sudden isolation of the network between the 2 sites, where both could talk to the tiebreaker node but not to each other. I did this by quickly erecting firewall rules on the hosts in a1 and severing any existing connections. The filesystem became unresponsive for 47 seconds before returning to normal.
 
